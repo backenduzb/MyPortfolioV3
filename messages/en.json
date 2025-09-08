@@ -1,0 +1,23 @@
+{
+    "Header": {
+        "home": "Home",
+        "info_me": "About Me",
+        "projects": "Projects",
+        "blog": "Blog"
+    },
+    "NotFound": {
+        "text": "Page not found.",
+        "button": "Back to homepage"
+    },
+    "HomePage": {
+        "text": "Fullstack Developer Portfolio",
+        "message": "I am <name>\"Javohir\"</name> — a Fullstack Developer. My main focus is <skills>Robotics, IoT technologies, and Software Engineering</skills>.",
+        "button":"View Projects",
+        "button2":"About Me",
+        "text2":"What I have achieved",
+        "text3":"My accomplishments so far.",
+        "cp_code":"Competitive Programming",
+        "rt_code":"Robocoding Olympiad",
+        "project":"Programming Level"
+    }
+}

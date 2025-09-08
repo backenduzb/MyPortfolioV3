@@ -1,0 +1,23 @@
+{
+    "Header": {
+        "home": "Bosh sahifa",
+        "info_me": "Haqimda",
+        "projects": "Loyihalar",
+        "blog": "Blog"
+    },
+    "NotFound": {
+        "text": "Sahifa topilmadi.",
+        "button": "Bosh sahifaga qaytish"
+    },
+    "HomePage": {
+        "text": "Fullstack Developer Portfolio",
+        "message": "Men <name>\"Javohir\"</name> — Fullstack dasturchiman. Asosiy yo‘nalishim <skills>Robototexnika, IoT texnologiyalari va Software Engineering</skills>.",
+        "button":"Loyihalarni ko'rish",
+        "button2":"Men haqimda",
+        "text2":"Nimalarga erishdim",
+        "text3":"Shu paytgacha erishgan yutuqlarim.",
+        "cp_code":"Sport dasturlash",
+        "rt_code":"Robocoding olimpiadasi",
+        "project":"Dasturlash darajsi"
+    }
+}
