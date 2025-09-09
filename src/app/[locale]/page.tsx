@@ -1,14 +1,17 @@
 "use client";
 
 import React from "react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import useAuth from "@/auth/Auth";
 import { useTranslations } from "next-intl";
-import RobotHand from "../../../public/img/image.png";
-import Idea from "../../../public/img/idea.png";
-import Image from "next/image";
+import Nextjs_logo from "../../../public/img/nextjs.png";
+import React_logo from "../../../public/img/react.png";
+import Django_logo from "../../../public/img/django.png";
 import { motion } from "framer-motion";
 import { usePathname, useSearchParams } from "next/navigation";
+import Image from "next/image";
+import { ArrowUpWideNarrowIcon } from "lucide-react";
+import Link from "next/link";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 50 },
@@ -28,11 +31,41 @@ const App = () => {
   const t = useTranslations("HomePage");
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoading(false), 2000);
+    return () => clearTimeout(timer);
+  }, []);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname, searchParams]);
+  if (loading) {
+    return (
+      <>
+        <div className="fixed inset-0 flex">
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: "-100%" }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
+            className="w-1/2 h-full bg-black/90 border-r"
+          >
 
+          </motion.div>
+          <div className="fixed top-[45%] right-[47.8%] h-18 w-18 border z-100"></div>
+          <div className="animate-spin fixed top-[45%] right-[47.8%] h-18 w-18 border z-100"></div>
+
+          <motion.div
+            initial={{ x: 0 }}
+            animate={{ x: "100%" }}
+            transition={{ duration: 1, ease: "easeInOut", delay: 1 }}
+            className="w-1/2 h-full bg-black/90 border-l"
+          />
+        </div>
+      </>
+    );
+  }
   return (
     <>
       <div className="w-full min-h-screen flex flex-col items-center justify-center text-center px-4">
@@ -87,69 +120,100 @@ const App = () => {
         </div>
       </div>
 
-      <motion.h2
+      <motion.div
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="text-center animate-load text-3xl font-bold mb-16 bg-gradient-to-r mt-20 select-none from-gray-400 via-gray-200 to-gray-400 bg-clip-text text-transparent"
-      >
-        {t("text2")}{" "}
-        <span className="text-[18px] font-medium">{t("text3")}</span>
-      </motion.h2>
+        viewport={{ once: true }} className="h-auto w-full flex flex-col justify-center items-center text-center px-4 mb-40 overflow-hidden">
+        <div className="relative w-60 h-20 bg-zinc-900 rounded-[10px] border-4 border-zinc-800 flex items-center justify-center  mt-26">
+          <p className="font-extrabold text-2xl bg-gradient-to-r select-none from-gray-400 via-gray-200 to-gray-400 bg-clip-text text-transparent">
+            I Work With
+          </p>
 
-      {/* Kartalar */}
-      <div className="h-auto w-full flex items-center justify-center text-center px-4 mb-20">
-        <div className="w-[80%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-auto gap-8">
-          {[t("cp_code"), t("rt_code"), t("project")].map((title, i) => (
-            <motion.div
-              key={i}
-              custom={i}
-              initial="hidden"
-              whileInView="visible"
-              variants={cardVariants}
-              viewport={{ once: true, amount: 0.2 }}
-              className="min-w-1/3 h-[400px] border rounded backdrop-blur-[3px] hover:cursor-pointer hover:bg-gray-700/40 transition duration-500 hover:-translate-y-2 hover:border-white hover:shadow-[0_0px_30px_0] border-gray-400 bg-gradient-to-r from-black/70 via-black/60 to-black/50 shadow-[0_0px_20px_0] shadow-white/40 gap-4 p-4"
-            >
-              <div className="h-10 w-full flex items-center justify-left gap-4 mt-2">
-                <div className="rounded-[40%_60%_65%_25%_/_40%_35%_65%_60%] border-2 border-gray-400 h-15 w-15 flex items-center justify-center top-0">
-                  {i === 0 ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="30"
-                      height="30"
-                      fill="currentColor"
-                      className="text-gray-300"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M5 0a.5.5 0 0 1 .5.5V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2h1V.5a.5.5 0 0 1 1 0V2A2.5 2.5 0 0 1 14 4.5h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14v1h1.5a.5.5 0 0 1 0 1H14a2.5 2.5 0 0 1-2.5 2.5v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14h-1v1.5a.5.5 0 0 1-1 0V14A2.5 2.5 0 0 1 2 11.5H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2v-1H.5a.5.5 0 0 1 0-1H2A2.5 2.5 0 0 1 4.5 2V.5A.5.5 0 0 1 5 0m-.5 3A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13h7a1.5 1.5 0 0 0 1.5-1.5v-7A1.5 1.5 0 0 0 11.5 3zM5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5zM6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z" />
-                    </svg>
-                  ) : i === 1 ? (
-                    <Image
-                      src={RobotHand}
-                      alt="Robot hand"
-                      width={40}
-                      height={40}
-                      className="rounded-lg"
-                    />
-                  ) : (
-                    <Image
-                      src={Idea}
-                      alt="Idea"
-                      width={40}
-                      height={40}
-                      className="rounded-lg"
-                    />
-                  )}
-                </div>
-                <p className="animate-load font-bold text-xl">{title}</p>
-              </div>
-            </motion.div>
-          ))}
+          <span className="absolute left-[-15px] top-1/4 w-3 h-[7px] border-l-[0.7px] border-bg-gray-30 bg-gradient-to-r select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+          <span className="absolute left-[-15px] top-2/3 w-3 h-[7px] border-l-[0.7px] border-bg-gray-30 bg-gradient-to-r select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+
+          <span className="absolute right-[-15px] top-1/4 w-3 h-[7px] border-r-[0.7px] border-bg-gray-30 bg-gradient-to-l select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+          <span className="absolute right-[-15px] top-2/3 w-3 h-[7px] border-r-[0.7px] border-bg-gray-30 bg-gradient-to-l select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+
+          <span className="absolute bottom-[-16px] left-1/4 w-2 h-3 border-b-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+          <span className="absolute bottom-[-16px] left-2/4 w-2 h-3 border-b-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+          <span className="absolute bottom-[-16px] left-3/4 w-2 h-3 border-b-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+
+          <span className="absolute top-[-16px] left-1/4 w-2 h-3 border-t-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+          <span className="absolute top-[-16px] left-2/4 w-2 h-3 border-t-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+          <span className="absolute top-[-16px] left-3/4 w-2 h-3 border-t-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
+
+          <span className="load-border-rounded absolute top-[-57px] left-[-786px] w-[110vh] h-10 border-r-2 border-t-2 rounded-tr-xl border-zinc-700"></span>
+          <span className="load-border-rounded absolute top-[-102px] left-[115.6] h-2 w-2 border-2 rounded-full border-zinc-700"></span>
+          <span className="load-border-rounded absolute top-[-96px] left-[119px] w-0 h-20 border-l-2 border-zinc-700 "></span>
+          <span className="load-border-rounded absolute top-[-56px] left-[178px] w-[110vh] h-10 border-l-2 border-t-2 rounded-tl-xl border-zinc-700"></span>
+          <span className="load-border-animation absolute top-[52px] left-[250px] w-[110vh] border-l-2 border-t-2 rounded-tl-xl border-zinc-700 z-[30]"></span>
+          <span className="load-border-animation absolute top-[20px] left-[-865px] w-[110vh] h-0 border-r-2 border-t-2 rounded-tr-xl border-zinc-700"></span>
+          
         </div>
+      <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-auto gap-8 mt-30">
+        <motion.div initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }} className="h-[300px] w-[450px] border-2 border-zinc-700 backdrop-blur-sm rounded flex items-center justify-center shadow-[0px_0px_10px_0px] shadow-zinc-500">
+          <Link href="https://react.dev/" target="_blank" className="w-full h-full flex items-center justify-center">
+            <div className="w-[96.8%] h-[95%] bg-gradient-to-b from-zinc-800/30 to-zinc-900 backdrop-blur-sm rounded hover:from-zinc-800 hover:cursor-pointer hover:to-zinc-950 transition duration-500" >
+              <div className="p-5">
+                <Image src={React_logo} width={50} height={50} alt="asc" />
+              </div>
+              <div className="flex items-center justify-left w-full gap-3">
+                <h1 className="text-left ml-5 mt-5 mb-3 text-3xl">React</h1>
+                <ArrowUpWideNarrowIcon className="mt-2" />
+              </div>
+              <div className="w-[95%]">
+                <p className="text-left ml-5">Bu JavaScript kutubxonasi bo‘lib, foydalanuvchi interfeyslarini yaratishda ishlatiladi. Komponentlarga asoslangan tuzilishi, virtual DOM tezligi va qayta foydalanish imkoniyatlari bilan mashhur..</p>
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }} className="h-[300px] w-[450px] border-2 border-zinc-700 backdrop-blur-sm rounded flex items-center justify-center shadow-[0px_0px_10px_0px] shadow-zinc-500">
+          <Link href="https://www.djangoproject.com/" target="_blank" className="w-full h-full flex items-center justify-center">
+            <div className="w-[96.8%] h-[95%] bg-gradient-to-b from-zinc-800/30 to-zinc-900 backdrop-blur-sm rounded hover:from-zinc-800 hover:cursor-pointer hover:to-zinc-950 transition duration-500" >
+              <div className="p-5 w-full h-20 mb-5">
+                <Image src={Django_logo} width={60} height={60} alt="asc" />
+              </div>
+              <div className="flex items-center justify-left w-full gap-3">
+                <h1 className="text-left ml-5 mt-5 mb-3 text-3xl">Django</h1>
+                <ArrowUpWideNarrowIcon className="mt-2" />
+              </div>
+              <div className="w-[95%]">
+                <p className="text-left ml-5">Python’da yozilgan kuchli va xavfsiz web framework. U tezkor ishlab chiqish, ma’lumotlar bazasi bilan integratsiya, admin panel va moduliylik orqali dasturchilarga samarali imkoniyatlar yaratadi.</p>
+              </div>
+            </div>
+          </Link>
+        </motion.div>
+        <motion.div initial={{ opacity: 0, y: 60 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }} className="h-[300px] w-[450px] border-2 border-zinc-700 backdrop-blur-sm rounded flex items-center justify-center shadow-[0px_0px_10px_0px] shadow-zinc-500">
+          <Link href="https://nextjs.org/" target="_blank" className="w-full h-full flex items-center justify-center">
+            <div className="w-[96.8%] h-[95%] bg-gradient-to-b from-zinc-800/30 to-zinc-900 backdrop-blur-sm rounded hover:from-zinc-800 hover:cursor-pointer hover:to-zinc-950 transition duration-500" >
+              <div className="w-full h-20 mb-10">
+                <Image src={Nextjs_logo} width={150} className="-mt-5" height={60} alt="asc" />
+              </div>
+              <div className="flex items-center justify-left w-full gap-3">
+                <h1 className="text-left ml-5 mt-5 mb-3 text-3xl">Next.js</h1>
+                <ArrowUpWideNarrowIcon className="mt-2" />
+              </div>
+              <div className="w-[95%]">
+                <p className="text-left ml-5">Bu JavaScript kutubxonasi bo‘lib, foydalanuvchi interfeyslarini yaratishda ishlatiladi. Komponentlarga asoslangan tuzilishi, virtual DOM tezligi va qayta foydalanish imkoniyatlari bilan mashhur..</p>
+              </div>
+            </div>
+          </Link>
+        </motion.div>
       </div>
+          
+      </motion.div>
     </>
   );
 };
-
 export default App;
