@@ -144,12 +144,12 @@ const App = () => {
           <span className="absolute top-[-16px] left-2/4 w-2 h-3 border-t-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
           <span className="absolute top-[-16px] left-3/4 w-2 h-3 border-t-[0.7px] border-bg-gray-30 bg-gradient-to-b select-none from-gray-400 via-gray-200 to-gray-400 z-[35]"></span>
 
-          <span className="load-border-rounded absolute top-[-57px] left-[-786px] w-[110vh] h-10 border-r-2 border-t-2 rounded-tr-xl border-zinc-700"></span>
+          <span className="load-border-rounded absolute top-[-57px] left-[-786px] w-[848px] h-10 border-r-2 border-t-2 rounded-tr-xl border-zinc-700"></span>
           <span className="load-border-rounded absolute top-[-102px] left-[115.6] h-2 w-2 border-2 rounded-full border-zinc-700"></span>
           <span className="load-border-rounded absolute top-[-96px] left-[119px] w-0 h-20 border-l-2 border-zinc-700 "></span>
-          <span className="load-border-rounded absolute top-[-56px] left-[178px] w-[110vh] h-10 border-l-2 border-t-2 rounded-tl-xl border-zinc-700"></span>
-          <span className="load-border-animation absolute top-[52px] left-[250px] w-[110vh] border-l-2 border-t-2 rounded-tl-xl border-zinc-700 z-[30]"></span>
-          <span className="load-border-animation absolute top-[20px] left-[-865px] w-[110vh] h-0 border-r-2 border-t-2 rounded-tr-xl border-zinc-700"></span>
+          <span className="load-border-rounded absolute top-[-56px] left-[178px] w-[860px] h-10 border-l-2 border-t-2 rounded-tl-xl border-zinc-700"></span>
+          <span className="load-border-animation absolute top-[52px] left-[250px] w-[860px] border-l-2 border-t-2 rounded-tl-xl border-zinc-700 z-[30]"></span>
+          <span className="load-border-animation absolute top-[20px] left-[-865px] w-[860px] h-0 border-r-2 border-t-2 rounded-tr-xl border-zinc-700"></span>
           
         </div>
       <div className="w-[90%] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 h-auto gap-8 mt-30">
