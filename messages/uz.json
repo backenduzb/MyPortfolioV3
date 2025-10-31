@@ -11,7 +11,8 @@
         "loaded_profile":"Ma'lumotlar yuklandi",
         "not_loaded_profile":"Malumotlar olinmadi",
         "enter":"Kirish",
-        "chat":"Chat"
+        "chat":"Chat",
+        "asc":"cascsac"
     },
     "NotFound": {
         "text": "Sahifa topilmadi.",
