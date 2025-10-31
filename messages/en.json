@@ -3,21 +3,71 @@
         "home": "Home",
         "info_me": "About Me",
         "projects": "Projects",
-        "blog": "Blog"
+        "blog": "Blog",
+        "exit": "Logout",
+        "edit": "Edit",
+        "profile": "Profile",
+        "loading_profile": "Loading data ...",
+        "loaded_profile": "Data loaded",
+        "not_loaded_profile": "Failed to fetch data",
+        "enter": "Login"
     },
     "NotFound": {
         "text": "Page not found.",
-        "button": "Back to homepage"
+        "button": "Back to Home"
     },
     "HomePage": {
         "text": "Fullstack Developer Portfolio",
-        "message": "I am <name>\"Javohir\"</name> — a Fullstack Developer. My main focus is <skills>Robotics, IoT technologies, and Software Engineering</skills>.",
-        "button":"View Projects",
-        "button2":"About Me",
-        "text2":"What I have achieved",
-        "text3":"My accomplishments so far.",
-        "cp_code":"Competitive Programming",
-        "rt_code":"Robocoding Olympiad",
-        "project":"Programming Level"
+        "message": "I am <name>“Javohir”</name> — a Fullstack developer. My main focus is <skills>Robotics, IoT technologies, and Software Engineering</skills>.",
+        "button": "View Projects",
+        "button2": "About Me",
+        "text2": "My Achievements",
+        "text3": "The accomplishments I have achieved so far.",
+        "cp_code": "Competitive Programming",
+        "rt_code": "Robocoding Olympiad",
+        "project": "Programming Level",
+        "react": "A JavaScript library for building user interfaces. Known for its component-based structure, virtual DOM speed, and reusability.",
+        "next": "A JavaScript library for building user interfaces. Known for its component-based structure, virtual DOM speed, and reusability.",
+        "python": "A powerful and secure Python web framework. It provides rapid development, database integration, an admin panel, and modularity."
+    },
+    "AboutPage": {
+        "title": "About Me",
+        "text": "Hi! I’m Javohir — 15 years old and very passionate about programming. I mainly code in Python, C++, and JavaScript, and I’m especially strong in backend.",
+        "text2": "I build web applications with Django and FastAPI, have experience creating Telegram bots, and also do frontend using React and Next.js. Currently, I work as a freelancer and share interesting programming content on my YouTube and Telegram channels."
+    },
+    "LoginPage": {
+        "logorsig": "Create or Login",
+        "login": "Login",
+        "signup": "Create Account",
+        "login_account": "Login to your account",
+        "username": "Username",
+        "password": "Password",
+        "remember": "Remember me",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "enter_account": "Enter your account"
+    },
+    "EditProfile": {
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "username": "Username",
+        "password": "Password",
+        "password_confirm": "Confirm Password",
+        "upload": "Upload Photo",
+        "password_error": "Passwords do not match",
+        "succes_updated": "Successfully updated",
+        "error_upload": "An error occurred while updating",
+        "edit_profile": "Edit Profile",
+        "save": "Save",
+        "saving": "Saving ...",
+        "change_password": "Change Password",
+        "show": "Show Password",
+        "hide": "Hide Password"
+    },
+    "SeeProfile": {
+        "profile": "Profile",
+        "first_name": "First Name",
+        "last_name": "Last Name",
+        "username": "Username"
     }
 }

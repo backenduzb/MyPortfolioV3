@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Background from "@/components/Background";
 import { Auths } from "@/auth/Auth";
+import { AlertProvider } from "@/context/Alert";
 import { NextIntlClientProvider } from "next-intl";
 
 export default async function LocaleLayout({
@@ -22,11 +23,13 @@ export default async function LocaleLayout({
   return (
     <Auths>
       <NextIntlClientProvider locale={locale} messages={messages}>
+        <AlertProvider>
         <Background />
         <Header />
         <main>
           {children}
         </main>
+        </AlertProvider>
       </NextIntlClientProvider>
     </Auths>
   );

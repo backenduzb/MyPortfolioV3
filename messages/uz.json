@@ -3,7 +3,15 @@
         "home": "Bosh sahifa",
         "info_me": "Haqimda",
         "projects": "Loyihalar",
-        "blog": "Blog"
+        "blog": "Blog",
+        "exit": "Chiqish",
+        "edit":"Tahrirlash",
+        "profile":"Profil",
+        "loading_profile":"Malumotlar yuklanmoqda ...",
+        "loaded_profile":"Ma'lumotlar yuklandi",
+        "not_loaded_profile":"Malumotlar olinmadi",
+        "enter":"Kirish",
+        "chat":"Chat"
     },
     "NotFound": {
         "text": "Sahifa topilmadi.",
@@ -12,12 +20,56 @@
     "HomePage": {
         "text": "Fullstack Developer Portfolio",
         "message": "Men <name>\"Javohir\"</name> — Fullstack dasturchiman. Asosiy yo‘nalishim <skills>Robototexnika, IoT texnologiyalari va Software Engineering</skills>.",
-        "button":"Loyihalarni ko'rish",
-        "button2":"Men haqimda",
-        "text2":"Nimalarga erishdim",
-        "text3":"Shu paytgacha erishgan yutuqlarim.",
-        "cp_code":"Sport dasturlash",
-        "rt_code":"Robocoding olimpiadasi",
-        "project":"Dasturlash darajsi"
+        "button": "Loyihalarni ko'rish",
+        "button2": "Men haqimda",
+        "text2": "Nimalarga erishdim",
+        "text3": "Shu paytgacha erishgan yutuqlarim.",
+        "cp_code": "Sport dasturlash",
+        "rt_code": "Robocoding olimpiadasi",
+        "project": "Dasturlash darajsi",
+        "react": "Bu JavaScript kutubxonasi bo‘lib, foydalanuvchi interfeyslarini yaratishda ishlatiladi. Komponentlarga asoslangan tuzilishi, virtual DOM tezligi va qayta foydalanish imkoniyatlari bilan mashhur..",
+        "next": "Bu JavaScript kutubxonasi bo‘lib, foydalanuvchi interfeyslarini yaratishda ishlatiladi. Komponentlarga asoslangan tuzilishi, virtual DOM tezligi va qayta foydalanish imkoniyatlari bilan mashhur..",
+        "python": "Python’da yozilgan kuchli va xavfsiz web framework. U tezkor ishlab chiqish, ma’lumotlar bazasi bilan integratsiya, admin panel va moduliylik orqali dasturchilarga samarali imkoniyatlar yaratadi."
+    },
+    "AboutPage": {
+        "title": "Haqimda",
+        "text": "Salom! MenJavohir — 15 yoshdaman va dasturlashga juda qiziqaman. Asosan Python, C++ va JavaScript tillarida kod yozaman, ayniqsa backend yo‘nalishida kuchliman.",
+        "text2": "Django va FastAPI yordamida web ilovalar yarataman, Telegram botlar yozish tajribam bor va React, Next.js yordamida frontend ham qilaman. Hozirda o‘zimning freelancerlik qilib ishlayapman va YouTube hamda Telegram kanalimda dasturlash bo‘yicha qiziqarli kontentlar ulashib boraman."
+    },
+    "LoginPage": {
+        "logorsig":"Yaratish yoki Kirish",
+        "login": "Kirish",
+        "signup": "Akkount yaratish",
+        "login_account": "Akkauntingizga kiring",
+        "username": "Tahallusingiz",
+        "password": "Parolingiz",
+        "remember": "Meni eslab qol.",
+        "first_name": "Ismingiz",
+        "last_name": "Sharifingiz",
+        "enter_account": "Akkountingizga kiring"
+    },
+    "EditProfile":{
+        "first_name":"Ismingiz",
+        "last_name":"Sharifingiz",
+        "username":"Tahallusingiz",
+        "password":"Parolingiz",
+        "password_confirm":"Parolini tasdiqlang",
+        "upload":"Rasm yuklash",
+        "password_error":"Parollar mos emas",
+        "succes_updated":"Muvofaqiyatli yangilandi",
+        "error_upload":"Yangilashda hatolik yuz berdi",
+        "edit_profile":"Profilni tahrirlash",
+        "save":"Saqlash",
+        "saving":"Saqlanmoqda ...",
+        "change_password":"Parolni tahrirlash",
+        "show":"Parolni ko'rsatish",
+        "hide":"Parolni yashirish"
+    },
+    "SeeProfile":{
+        "profile":"Profil",
+        "first_name":"Ismingiz",
+        "last_name":"Sharifingiz",
+        "username":"Tahallusingiz"
     }
+    
 }
