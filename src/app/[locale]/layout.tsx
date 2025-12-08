@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Background from "@/components/Background";
 import { NextIntlClientProvider } from "next-intl";
-import Scials from "@/components/Socials";
 import Socials from "@/components/Socials";
 
 export default async function LocaleLayout({
