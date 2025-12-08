@@ -14,11 +14,11 @@ export default function Header() {
     const segments = pathname.split("/");
     const currentLocale = segments[1] || "en";
 
-    const links =useMemo(() =>  [
+    const links = useMemo(() => [
         { href: "home", label: t("home") },
         { href: "about", label: t("info_me") },
-        // { href: "projects", label: t("projects") },
-    ],[]);
+    ], []);
+
 
     const changeLanguage = (locale: string) => {
         const newSegments = [...segments];
