@@ -1,13 +1,10 @@
 "use client"
 
 import Image from "next/image";
-import VictusLaptop from "../../public/img/victus.png"
 import UZDevs from "../../public/img/uzdevs.png";
-import Robo from "../../public/img/robocontest.png";
 import X from "../../public/img/x.png";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 
 export default function Socials() {
     return (

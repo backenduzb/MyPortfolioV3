@@ -1,8 +1,5 @@
 "use client";
 
-import UZDevs from "../../../public/img/uzdevs.png";
-import Robo from "../../../public/img/robocontest.png";
-import X from "../../../public/img/x.png";
 import React from "react";
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
