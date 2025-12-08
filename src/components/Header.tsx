@@ -18,7 +18,7 @@ export default function Header() {
     const links = [
         { href: "home", label: t("home") },
         { href: "about", label: t("info_me") },
-        { href: "projects", label: t("projects") },
+        // { href: "projects", label: t("projects") },
     ];
 
     const changeLanguage = (locale: string) => {
