@@ -1,73 +1,72 @@
 {
-    "Header": {
-        "home": "ホーム",
-        "info_me": "自己紹介",
-        "projects": "プロジェクト",
-        "blog": "ブログ",
-        "exit": "ログアウト",
-        "edit": "編集",
-        "profile": "プロフィール",
-        "loading_profile": "データを読み込み中 ...",
-        "loaded_profile": "データが読み込まれました",
-        "not_loaded_profile": "データを取得できませんでした",
-        "enter": "ログイン"
-    },
-    "NotFound": {
-        "text": "ページが見つかりません。",
-        "button": "ホームに戻る"
-    },
-    "HomePage": {
-        "text": "フルスタック開発者ポートフォリオ",
-        "message": "私は <name>「ジャヴォヒル」</name> — フルスタック開発者です。主な分野は <skills>ロボット工学、IoT 技術、ソフトウェアエンジニアリング</skills> です。",
-        "button": "プロジェクトを見る",
-        "button2": "自己紹介",
-        "text2": "達成したこと",
-        "text3": "これまでに達成した成果。",
-        "cp_code": "競技プログラミング",
-        "rt_code": "ロボコーディング大会",
-        "project": "プログラミングレベル",
-        "react": "ユーザーインターフェースを構築するための JavaScript ライブラリです。コンポーネントベースの構造、仮想DOMによる高速処理、再利用性で知られています。",
-        "next": "ユーザーインターフェースを構築するための JavaScript ライブラリです。コンポーネントベースの構造、仮想DOMによる高速処理、再利用性で知られています。",
-        "python": "Python で書かれた強力で安全な Web フレームワークです。迅速な開発、データベース統合、管理パネル、モジュール性を提供します。"
-    },
-    "AboutPage": {
-        "title": "自己紹介",
-        "text": "こんにちは！私はジャヴォヒル — 15歳で、プログラミングにとても情熱を持っています。主に Python、C++、JavaScript でコードを書き、特にバックエンドが得意です。",
-        "text2": "Django や FastAPI を使って Web アプリを開発し、Telegram ボットの作成経験もあります。さらに React や Next.js を使ってフロントエンドも行っています。現在はフリーランスとして活動し、YouTube や Telegram チャンネルでプログラミングに関する面白いコンテンツを発信しています。"
-    },
-    "LoginPage": {
-        "logorsig": "新規作成 または ログイン",
-        "login": "ログイン",
-        "signup": "アカウント作成",
-        "login_account": "アカウントにログイン",
-        "username": "ユーザー名",
-        "password": "パスワード",
-        "remember": "ログイン状態を保持",
-        "first_name": "名",
-        "last_name": "姓",
-        "enter_account": "アカウントに入る"
-    },
-    "EditProfile": {
-        "first_name": "名",
-        "last_name": "姓",
-        "username": "ユーザー名",
-        "password": "パスワード",
-        "password_confirm": "パスワードを確認",
-        "upload": "写真をアップロード",
-        "password_error": "パスワードが一致しません",
-        "succes_updated": "正常に更新されました",
-        "error_upload": "更新中にエラーが発生しました",
-        "edit_profile": "プロフィールを編集",
-        "save": "保存",
-        "saving": "保存中 ...",
-        "change_password": "パスワードを変更",
-        "show": "パスワードを表示",
-        "hide": "パスワードを非表示"
-    },
-    "SeeProfile": {
-        "profile": "プロフィール",
-        "first_name": "名",
-        "last_name": "姓",
-        "username": "ユーザー名"
-    }
+  "Header": {
+    "home": "ホーム",
+    "info_me": "自己紹介",
+    "projects": "プロジェクト",
+    "blog": "ブログ",
+    "exit": "ログアウト",
+    "edit": "編集",
+    "profile": "プロフィール",
+    "loading_profile": "データを読み込み中...",
+    "loaded_profile": "データが読み込まれました",
+    "not_loaded_profile": "データを取得できませんでした",
+    "enter": "ログイン",
+    "chat": "チャット",
+    "asc": "cascsac"
+  },
+  "NotFound": {
+    "text": "ページが見つかりません。",
+    "button": "ホームに戻る"
+  },
+  "HomePage": {
+    "inf_text": "こんにちは、私はジャヴヒルです。フルスタック開発者として2年半ほどスキルを磨いてきました。Django、Rest Framework、FastAPI などの Python Web フレームワークでバックエンドを構築できます。また、Telegram ボット、デスクトップアプリ、C#、JavaScript、TypeScript などの他の言語にも経験があります。チーム経験は少ないですが、自分だけの小さなプロジェクトがあります。Docker、GitHub、3D モデリング、ゲーム開発にも興味があり、小規模な制作を行いました。Linux 管理の経験も約1年あります。",
+    "about": "自己紹介",
+    "text": "フルスタック開発者ポートフォリオ",
+    "message": "私は <name>「ジャヴヒル」</name> です。メイン分野は <skills>ロボティクス、IoT 技術、ソフトウェアエンジニアリング</skills> です。",
+    "button": "プロジェクトを見る",
+    "button2": "私について",
+    "text2": "達成したこと",
+    "text3": "これまでに成し遂げた成果。",
+    "cp_code": "競技プログラミング",
+    "rt_code": "ロボコーディング大会",
+    "project": "プログラミングレベル",
+    "react": "ユーザーインターフェースを構築するための JavaScript ライブラリ。コンポーネント構造、仮想DOM、高速性で知られています。",
+    "next": "React ベースの強力なフレームワークで、サーバーサイドレンダリングや最適化で有名です。",
+    "python": "Python で書かれた強力で安全な Web フレームワーク。高速開発、DB統合、管理パネルなどを提供します。"
+  },
+  "LoginPage": {
+    "logorsig": "作成またはログイン",
+    "login": "ログイン",
+    "signup": "アカウント作成",
+    "login_account": "アカウントにログイン",
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "remember": "記憶する",
+    "first_name": "名",
+    "last_name": "姓",
+    "enter_account": "アカウントに入る"
+  },
+  "EditProfile": {
+    "first_name": "名",
+    "last_name": "姓",
+    "username": "ユーザー名",
+    "password": "パスワード",
+    "password_confirm": "パスワード確認",
+    "upload": "画像をアップロード",
+    "password_error": "パスワードが一致しません",
+    "succes_updated": "正常に更新されました",
+    "error_upload": "更新中にエラーが発生しました",
+    "edit_profile": "プロフィール編集",
+    "save": "保存",
+    "saving": "保存中...",
+    "change_password": "パスワード変更",
+    "show": "パスワードを表示",
+    "hide": "パスワードを隠す"
+  },
+  "SeeProfile": {
+    "profile": "プロフィール",
+    "first_name": "名",
+    "last_name": "姓",
+    "username": "ユーザー名"
+  }
 }

@@ -1,73 +1,72 @@
 {
-    "Header": {
-        "home": "Home",
-        "info_me": "About Me",
-        "projects": "Projects",
-        "blog": "Blog",
-        "exit": "Logout",
-        "edit": "Edit",
-        "profile": "Profile",
-        "loading_profile": "Loading data ...",
-        "loaded_profile": "Data loaded",
-        "not_loaded_profile": "Failed to fetch data",
-        "enter": "Login"
-    },
-    "NotFound": {
-        "text": "Page not found.",
-        "button": "Back to Home"
-    },
-    "HomePage": {
-        "text": "Fullstack Developer Portfolio",
-        "message": "I am <name>“Javohir”</name> — a Fullstack developer. My main focus is <skills>Robotics, IoT technologies, and Software Engineering</skills>.",
-        "button": "View Projects",
-        "button2": "About Me",
-        "text2": "My Achievements",
-        "text3": "The accomplishments I have achieved so far.",
-        "cp_code": "Competitive Programming",
-        "rt_code": "Robocoding Olympiad",
-        "project": "Programming Level",
-        "react": "A JavaScript library for building user interfaces. Known for its component-based structure, virtual DOM speed, and reusability.",
-        "next": "A JavaScript library for building user interfaces. Known for its component-based structure, virtual DOM speed, and reusability.",
-        "python": "A powerful and secure Python web framework. It provides rapid development, database integration, an admin panel, and modularity."
-    },
-    "AboutPage": {
-        "title": "About Me",
-        "text": "Hi! I’m Javohir — 15 years old and very passionate about programming. I mainly code in Python, C++, and JavaScript, and I’m especially strong in backend.",
-        "text2": "I build web applications with Django and FastAPI, have experience creating Telegram bots, and also do frontend using React and Next.js. Currently, I work as a freelancer and share interesting programming content on my YouTube and Telegram channels."
-    },
-    "LoginPage": {
-        "logorsig": "Create or Login",
-        "login": "Login",
-        "signup": "Create Account",
-        "login_account": "Login to your account",
-        "username": "Username",
-        "password": "Password",
-        "remember": "Remember me",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "enter_account": "Enter your account"
-    },
-    "EditProfile": {
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "username": "Username",
-        "password": "Password",
-        "password_confirm": "Confirm Password",
-        "upload": "Upload Photo",
-        "password_error": "Passwords do not match",
-        "succes_updated": "Successfully updated",
-        "error_upload": "An error occurred while updating",
-        "edit_profile": "Edit Profile",
-        "save": "Save",
-        "saving": "Saving ...",
-        "change_password": "Change Password",
-        "show": "Show Password",
-        "hide": "Hide Password"
-    },
-    "SeeProfile": {
-        "profile": "Profile",
-        "first_name": "First Name",
-        "last_name": "Last Name",
-        "username": "Username"
-    }
+  "Header": {
+    "home": "Home",
+    "info_me": "About Me",
+    "projects": "Projects",
+    "blog": "Blog",
+    "exit": "Logout",
+    "edit": "Edit",
+    "profile": "Profile",
+    "loading_profile": "Loading data...",
+    "loaded_profile": "Data loaded",
+    "not_loaded_profile": "Failed to load data",
+    "enter": "Login",
+    "chat": "Chat",
+    "asc": "cascsac"
+  },
+  "NotFound": {
+    "text": "Page not found.",
+    "button": "Return to homepage"
+  },
+  "HomePage": {
+    "inf_text": "Hello, I’m Javohir, a fullstack developer. I’ve been improving my skills for about 2 and a half years. I work with Django, Rest Framework, FastAPI, and other Python web frameworks. I also have experience with Telegram bots, desktop apps, and other programming languages such as C#, JavaScript, and TypeScript. Although I haven’t worked much in teams, I have my own small projects. I’ve also explored Docker Containers, GitHub, 3D modeling, and Game Development. I have almost one year of experience in Linux administration as well.",
+    "about": "ABOUT ME",
+    "text": "Fullstack Developer Portfolio",
+    "message": "I am <name>\"Javohir\"</name> — a fullstack developer. My main interests are <skills>Robotics, IoT technologies, and Software Engineering</skills>.",
+    "button": "View Projects",
+    "button2": "About Me",
+    "text2": "My Achievements",
+    "text3": "Achievements I have made so far.",
+    "cp_code": "Competitive Programming",
+    "rt_code": "Robocoding Olympiad",
+    "project": "Coding Skill Level",
+    "react": "A JavaScript library used for building user interfaces. It is known for its component-based structure, virtual DOM performance, and reusability.",
+    "next": "A powerful framework built on top of React, known for server-side rendering, routing, and optimized performance.",
+    "python": "A powerful and secure web framework written in Python. It provides rapid development, database integration, admin panel, and modularity."
+  },
+  "LoginPage": {
+    "logorsig": "Create or Log In",
+    "login": "Log In",
+    "signup": "Create Account",
+    "login_account": "Log in to your account",
+    "username": "Username",
+    "password": "Password",
+    "remember": "Remember me.",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "enter_account": "Enter your account"
+  },
+  "EditProfile": {
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "username": "Username",
+    "password": "Password",
+    "password_confirm": "Confirm Password",
+    "upload": "Upload Image",
+    "password_error": "Passwords do not match",
+    "succes_updated": "Successfully updated",
+    "error_upload": "An error occurred during update",
+    "edit_profile": "Edit Profile",
+    "save": "Save",
+    "saving": "Saving...",
+    "change_password": "Change Password",
+    "show": "Show Password",
+    "hide": "Hide Password"
+  },
+  "SeeProfile": {
+    "profile": "Profile",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "username": "Username"
+  }
 }

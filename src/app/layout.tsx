@@ -3,9 +3,6 @@ import type { Metadata } from "next";
 import { ToastContainer, Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./globals.css";
-import Header from "@/components/Header";
-import Background from "@/components/Background";
-import { Auths } from "@/auth/Auth";
 
 const inter = Inter({
   subsets: ["latin"],

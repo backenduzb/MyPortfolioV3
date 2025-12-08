@@ -19,6 +19,8 @@
         "button": "Bosh sahifaga qaytish"
     },
     "HomePage": {
+        "inf_text":"Assalomu alaykum, men Javohir fullstack dasturchiman bu sohada 2 yarim yildan beri o'z ustimda ishlab kelaman. Men hozirda Django, Rest framewrok, Fastapi va boshqa python web frameworklarida backend yoza olaman va bundan tashqari telegram bot, desktop ilova, boshqa dasturlash tillari C#, JavaScrip, TypeScript bo'yicha ham anchagina tajribam bor. Jamoaviy kam ishlaganman hozirda o'zimni kichik kichik loyihalarim bor. Bundan tashqari Docker Containers, Github, 3D modeling, Game Devlik ga ham qiziqib ko'rganman va sinab kichik loyihalar qilganman. Linux administratoligi bo'yicha ham deyarli 1 yillik tajribam bor.",
+        "about":"ABOUT ME",
         "text": "Fullstack Developer Portfolio",
         "message": "Men <name>\"Javohir\"</name> — Fullstack dasturchiman. Asosiy yo‘nalishim <skills>Robototexnika, IoT texnologiyalari va Software Engineering</skills>.",
         "button": "Loyihalarni ko'rish",
@@ -31,11 +33,6 @@
         "react": "Bu JavaScript kutubxonasi bo‘lib, foydalanuvchi interfeyslarini yaratishda ishlatiladi. Komponentlarga asoslangan tuzilishi, virtual DOM tezligi va qayta foydalanish imkoniyatlari bilan mashhur..",
         "next": "Bu JavaScript kutubxonasi bo‘lib, foydalanuvchi interfeyslarini yaratishda ishlatiladi. Komponentlarga asoslangan tuzilishi, virtual DOM tezligi va qayta foydalanish imkoniyatlari bilan mashhur..",
         "python": "Python’da yozilgan kuchli va xavfsiz web framework. U tezkor ishlab chiqish, ma’lumotlar bazasi bilan integratsiya, admin panel va moduliylik orqali dasturchilarga samarali imkoniyatlar yaratadi."
-    },
-    "AboutPage": {
-        "title": "Haqimda",
-        "text": "Salom! MenJavohir — 15 yoshdaman va dasturlashga juda qiziqaman. Asosan Python, C++ va JavaScript tillarida kod yozaman, ayniqsa backend yo‘nalishida kuchliman.",
-        "text2": "Django va FastAPI yordamida web ilovalar yarataman, Telegram botlar yozish tajribam bor va React, Next.js yordamida frontend ham qilaman. Hozirda o‘zimning freelancerlik qilib ishlayapman va YouTube hamda Telegram kanalimda dasturlash bo‘yicha qiziqarli kontentlar ulashib boraman."
     },
     "LoginPage": {
         "logorsig":"Yaratish yoki Kirish",

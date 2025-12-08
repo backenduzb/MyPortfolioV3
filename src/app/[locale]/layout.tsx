@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Background from "@/components/Background";
-import { Auths } from "@/auth/Auth";
-import { AlertProvider } from "@/context/Alert";
 import { NextIntlClientProvider } from "next-intl";
+import Scials from "@/components/Socials";
+import Socials from "@/components/Socials";
 
 export default async function LocaleLayout({
   children,
@@ -21,16 +21,13 @@ export default async function LocaleLayout({
   }
 
   return (
-    <Auths>
       <NextIntlClientProvider locale={locale} messages={messages}>
-        <AlertProvider>
         <Background />
         <Header />
+        <Socials />
         <main>
           {children}
         </main>
-        </AlertProvider>
       </NextIntlClientProvider>
-    </Auths>
   );
 }
